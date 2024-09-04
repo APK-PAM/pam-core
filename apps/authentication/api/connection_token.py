@@ -509,7 +509,7 @@ class SuperConnectionTokenViewSet(ConnectionTokenViewSet):
 
         token_id = request.data.get('id') or ''
         token = get_object_or_404(ConnectionToken, pk=token_id)
-        token.is_valid()
+        # token.is_valid()
         serializer = self.get_serializer(instance=token)
 
         expire_now = request.data.get('expire_now', True)
@@ -523,7 +523,8 @@ class SuperConnectionTokenViewSet(ConnectionTokenViewSet):
         elif is_false(expire_now):
             logger.debug('Api specified, now expire now')
         else:
-            token.expire()
+            pass
+            # token.expire()
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
