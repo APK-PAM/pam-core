@@ -11,7 +11,7 @@ default_interface = dict((
     ('logo_index', static('img/logo_text_white.png')),
     ('login_image', static('img/login_image.png')),
     ('favicon', static('img/facio.ico')),
-    ('login_title', _('JumpServer - An open-source PAM')),
+    ('login_title', _('APK SWAP')),
     ('theme', 'classic_green'),
     ('theme_info', {}),
     ('footer_content', ''),
@@ -25,7 +25,7 @@ default_context = {
     'LOGIN_WECOM_logo_logout': static('img/login_wecom_logo.png'),
     'LOGIN_DINGTALK_logo_logout': static('img/login_dingtalk_logo.png'),
     'LOGIN_FEISHU_logo_logout': static('img/login_feishu_logo.png'),
-    'COPYRIGHT': f'FIT2CLOUD 飞致云 © 2014-{current_year}',
+    'COPYRIGHT': f'APK © {current_year}',
     'INTERFACE': default_interface,
 }
 
