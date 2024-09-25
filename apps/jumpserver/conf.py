@@ -260,7 +260,7 @@ class Config(dict):
         'VAULT_ENABLED': False,
         'VAULT_HCP_HOST': '',
         'VAULT_HCP_TOKEN': '',
-        'VAULT_HCP_MOUNT_POINT': 'jumpserver',
+        'VAULT_HCP_MOUNT_POINT': 'apkswap',
 
         'HISTORY_ACCOUNT_CLEAN_LIMIT': 999,
 
@@ -271,9 +271,9 @@ class Config(dict):
         # Auth LDAP settings
         'AUTH_LDAP': False,
         'AUTH_LDAP_SERVER_URI': 'ldap://localhost:389',
-        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=jumpserver,dc=org',
+        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=apkswap,dc=org',
         'AUTH_LDAP_BIND_PASSWORD': '',
-        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=jumpserver,dc=org',
+        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=apkswap,dc=org',
         'AUTH_LDAP_SEARCH_FILTER': '(cn=%(user)s)',
         'AUTH_LDAP_START_TLS': False,
         'AUTH_LDAP_USER_ATTR_MAP': {"username": "cn", "name": "sn", "email": "mail"},
@@ -291,9 +291,9 @@ class Config(dict):
         # Auth LDAP HA settings
         'AUTH_LDAP_HA': False,
         'AUTH_LDAP_HA_SERVER_URI': 'ldap://localhost:389',
-        'AUTH_LDAP_HA_BIND_DN': 'cn=admin,dc=jumpserver,dc=org',
+        'AUTH_LDAP_HA_BIND_DN': 'cn=admin,dc=apkswap,dc=org',
         'AUTH_LDAP_HA_BIND_PASSWORD': '',
-        'AUTH_LDAP_HA_SEARCH_OU': 'ou=tech,dc=jumpserver,dc=org',
+        'AUTH_LDAP_HA_SEARCH_OU': 'ou=tech,dc=apkswap,dc=org',
         'AUTH_LDAP_HA_SEARCH_FILTER': '(cn=%(user)s)',
         'AUTH_LDAP_HA_START_TLS': False,
         'AUTH_LDAP_HA_USER_ATTR_MAP': {"username": "cn", "name": "sn", "email": "mail"},
@@ -379,9 +379,9 @@ class Config(dict):
         'SAML2_SP_ADVANCED_SETTINGS': {
             "organization": {
                 "en": {
-                    "name": "JumpServer",
-                    "displayname": "JumpServer",
-                    "url": "https://jumpserver.org/"
+                    "name": "APKSWAP",
+                    "displayname": "APKSWAP",
+                    "url": "https://apk-group.net/"
                 }
             },
             "strict": True,
@@ -417,7 +417,7 @@ class Config(dict):
 
         'AUTH_PASSKEY': False,
         'FIDO_SERVER_ID': '',
-        'FIDO_SERVER_NAME': 'JumpServer',
+        'FIDO_SERVER_NAME': 'APKSWAP',
 
         # 企业微信
         'AUTH_WECOM': False,
@@ -523,7 +523,7 @@ class Config(dict):
         'EMAIL_CUSTOM_USER_CREATED_BODY': _('Your account has been created successfully'),
 
         'OTP_VALID_WINDOW': 2,
-        'OTP_ISSUER_NAME': 'JumpServer',
+        'OTP_ISSUER_NAME': 'APKSWAP',
         'EMAIL_SUFFIX': 'example.com',
 
         # Terminal配置
@@ -602,7 +602,7 @@ class Config(dict):
         'PERM_TREE_REGEN_INTERVAL': 1,
         'FLOWER_URL': "127.0.0.1:5555",
         'LANGUAGE_CODE': 'en',
-        'TIME_ZONE': 'Asia/Shanghai',
+        'TIME_ZONE': 'Asia/Tehran',
         'FORCE_SCRIPT_NAME': '',
         'SESSION_COOKIE_SECURE': False,
         'DOMAINS': '',
@@ -645,8 +645,8 @@ class Config(dict):
         'TERMINAL_TELNET_REGEX': '',
 
         # 导航栏 帮助
-        'HELP_DOCUMENT_URL': 'https://docs.jumpserver.org/zh/v3/',
-        'HELP_SUPPORT_URL': 'https://www.jumpserver.org/support/',
+        'HELP_DOCUMENT_URL': 'https://apk-group.net/',
+        'HELP_SUPPORT_URL': 'https://www.apk-group.net/',
 
         'FORGOT_PASSWORD_URL': '',
         'HEALTH_CHECK_TOKEN': '',

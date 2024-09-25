@@ -38,7 +38,7 @@ ARG APT_MIRROR=http://deb.debian.org
 RUN set -ex \
     && rm -f /etc/apt/apt.conf.d/docker-clean \
     && sed -i "s@http://.*.debian.org@${APT_MIRROR}@g" /etc/apt/sources.list \
-    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && ln -sf /usr/share/zoneinfo/Asia/Tehran /etc/localtime \
     && apt-get update > /dev/null \
     && apt-get -y install --no-install-recommends ${DEPENDENCIES} \
     && apt-get -y install --no-install-recommends ${TOOLS} \
