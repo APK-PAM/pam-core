@@ -25,7 +25,7 @@ JumpServer is an open-source Privileged Access Management (PAM) tool that provid
 Prepare a clean Linux Server ( 64 bit, >= 4c8g )
 
 ```sh
-curl -sSL https://github.com/jumpserver/jumpserver/releases/latest/download/quick_start.sh | bash
+curl -sSL https://github.com/APK-PAM/pam-core/releases/latest/download/quick_start.sh | bash
 ```
 
 Access JumpServer in your browser at `http://your-jumpserver-ip/`
