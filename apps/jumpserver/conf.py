@@ -260,7 +260,7 @@ class Config(dict):
         'VAULT_ENABLED': False,
         'VAULT_HCP_HOST': '',
         'VAULT_HCP_TOKEN': '',
-        'VAULT_HCP_MOUNT_POINT': 'apkswap',
+        'VAULT_HCP_MOUNT_POINT': 'apkpam',
 
         'HISTORY_ACCOUNT_CLEAN_LIMIT': 999,
 
@@ -271,9 +271,9 @@ class Config(dict):
         # Auth LDAP settings
         'AUTH_LDAP': False,
         'AUTH_LDAP_SERVER_URI': 'ldap://localhost:389',
-        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=apkswap,dc=org',
+        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=apkpam,dc=org',
         'AUTH_LDAP_BIND_PASSWORD': '',
-        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=apkswap,dc=org',
+        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=apkpam,dc=org',
         'AUTH_LDAP_SEARCH_FILTER': '(cn=%(user)s)',
         'AUTH_LDAP_START_TLS': False,
         'AUTH_LDAP_USER_ATTR_MAP': {"username": "cn", "name": "sn", "email": "mail"},
@@ -291,9 +291,9 @@ class Config(dict):
         # Auth LDAP HA settings
         'AUTH_LDAP_HA': False,
         'AUTH_LDAP_HA_SERVER_URI': 'ldap://localhost:389',
-        'AUTH_LDAP_HA_BIND_DN': 'cn=admin,dc=apkswap,dc=org',
+        'AUTH_LDAP_HA_BIND_DN': 'cn=admin,dc=apkpam,dc=org',
         'AUTH_LDAP_HA_BIND_PASSWORD': '',
-        'AUTH_LDAP_HA_SEARCH_OU': 'ou=tech,dc=apkswap,dc=org',
+        'AUTH_LDAP_HA_SEARCH_OU': 'ou=tech,dc=apkpam,dc=org',
         'AUTH_LDAP_HA_SEARCH_FILTER': '(cn=%(user)s)',
         'AUTH_LDAP_HA_START_TLS': False,
         'AUTH_LDAP_HA_USER_ATTR_MAP': {"username": "cn", "name": "sn", "email": "mail"},
@@ -379,8 +379,8 @@ class Config(dict):
         'SAML2_SP_ADVANCED_SETTINGS': {
             "organization": {
                 "en": {
-                    "name": "APKSWAP",
-                    "displayname": "APKSWAP",
+                    "name": "APKPAM",
+                    "displayname": "APKPAM",
                     "url": "https://apk-group.net/"
                 }
             },
@@ -417,7 +417,7 @@ class Config(dict):
 
         'AUTH_PASSKEY': False,
         'FIDO_SERVER_ID': '',
-        'FIDO_SERVER_NAME': 'APKSWAP',
+        'FIDO_SERVER_NAME': 'APKPAM',
 
         # 企业微信
         'AUTH_WECOM': False,
@@ -523,7 +523,7 @@ class Config(dict):
         'EMAIL_CUSTOM_USER_CREATED_BODY': _('Your account has been created successfully'),
 
         'OTP_VALID_WINDOW': 2,
-        'OTP_ISSUER_NAME': 'APKSWAP',
+        'OTP_ISSUER_NAME': 'APKPAM',
         'EMAIL_SUFFIX': 'example.com',
 
         # Terminal配置
